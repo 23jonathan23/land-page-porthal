@@ -9,7 +9,7 @@ export default props => {
     <section id='about' className='about'>
       <div className='container container-about'>
         <div className='row'>
-          <div className='col-lg-6 about-text'>
+          <div className='col-lg-12 col-xl-6 col-xl-offset-1 about-text'>
             <h3>Sobre Nós</h3>
             <p className='description-text'>
               The collaborative process of web development requires close
@@ -19,7 +19,7 @@ export default props => {
             </p>
             <h2 className='classic'>Nome da Empresa</h2>
           </div>
-          <div className='col-lg-5 col-lg-offset-1 indicators'>
+          <div className='col-lg-12 col-xl-5 col-xl-offset-1 indicators'>
             <h3>&nbsp;</h3>
             <Indicator value={0.93} text='Design' />
             <Indicator value={0.82} text='Programming' />

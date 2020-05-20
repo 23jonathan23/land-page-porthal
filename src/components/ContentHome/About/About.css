@@ -43,3 +43,12 @@
   text-align: center;
   margin-left: 8.3%;
 }
+
+@media (max-width: 1199px) {
+  .indicators {
+    margin-left: 0;
+  }
+  .about-text {
+    text-align: center;
+  }
+}

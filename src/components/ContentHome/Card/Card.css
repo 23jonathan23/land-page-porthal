@@ -1,0 +1,14 @@
+.card-category h4 {
+  margin: 20px 0 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+@media (max-width: 1199px) {
+  .card-category {
+    margin-bottom: 25px;
+  }
+}
