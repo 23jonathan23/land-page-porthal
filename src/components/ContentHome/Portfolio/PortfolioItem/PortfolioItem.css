@@ -78,3 +78,9 @@
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
+
+@media (max-width: 768px) {
+  .portfolio-group {
+    height: 450px;
+  }
+}

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.about {
+  position: relative;
+  z-index: 992;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.container-about {
+  visibility: visible;
+  animation-name: fadeIn;
+}
+
+.about-text h3 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.description-text {
+  padding: 0;
+  margin: 0;
+}
+
+.classic {
+  font-family: 'Great Vibes', sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  margin: 10px 0 0 15px;
+  transform: rotate(-4deg) !important;
+  -moz-transform: rotate(-4deg) !important;
+  -webkit-transform: rotate(-4deg) !important;
+  font-size: 30px;
+}
+
+.indicators {
+  text-align: center;
+  margin-left: 8.3%;
+}

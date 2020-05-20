@@ -12,7 +12,9 @@ html {
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  font: 200 16px/1.7 Kanit, sans-serif;
+  letter-spacing: 0.03em;
+  color: #555;
   background: #f3f3f3;
   -webkit-font-smoothing: antialiased;
 }

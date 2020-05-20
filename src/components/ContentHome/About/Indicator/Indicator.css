@@ -1,0 +1,14 @@
+.circle {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: top;
+  text-align: center;
+  width: 100px;
+  padding-top: 38px;
+  vertical-align: baseline;
+}
+
+.agenda {
+  padding-top: 10px;
+}

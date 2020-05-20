@@ -8,7 +8,7 @@ export default props => (
   <BrowserRouter>
     <Switch>
       <Route exact path='/' component={Home} />
-      <Route path='/publication' component={Publication} />
+      <Route path='/publication/:id' component={Publication} />
       <Redirect ref='*' to='/' />
     </Switch>
   </BrowserRouter>
