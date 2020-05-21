@@ -57,10 +57,11 @@
   position: relative;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 227px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  object-fit: cover;
 }
 
 .portfolio-item:hover img {
@@ -72,4 +73,16 @@
 .portfolio-item:hover .portfolio-overlay .caption {
   bottom: 10%;
   opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .portfolio-group img {
+    height: 292px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-group img {
+    height: 325px;
+  }
 }

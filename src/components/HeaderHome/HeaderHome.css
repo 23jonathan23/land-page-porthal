@@ -11,6 +11,7 @@
   -moz-background-size: cover;
   background-size: cover;
   transition: opacity 0.5s, height 0.6s;
+  filter: brightness(80%);
 }
 
 .headerOpacity1 {
