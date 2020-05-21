@@ -5,6 +5,7 @@ import About from './About/About'
 import ServicesCompany from './ServicesCompany/ServicesCompany'
 import Indicators from './Indicators/Indicators'
 import Benefits from './Benefits/Benefits'
+import Presentation from './Presentation/Presentation'
 
 export default props => {
   return (
@@ -14,6 +15,7 @@ export default props => {
       <ServicesCompany />
       <Indicators />
       <Benefits />
+      <Presentation showVideo={props.showVideo} />
     </>
   )
 }

@@ -18,5 +18,6 @@
 }
 
 .portfolio-items {
+  position: relative;
   margin-right: 0;
 }

@@ -1,0 +1,91 @@
+.swipebox-background-container {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.swipebox-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swipebox-slider {
+  transform: translate3d(0%, 0px, 0px);
+  display: block;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+}
+
+.swipebox-slider .slide {
+  height: 100%;
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swipebox-video-container {
+  display: flex;
+  align-items: center;
+  background: none;
+  max-width: 1140px;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  padding: 3% 5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.swipebox-video {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.swipebox-video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swipebox-close {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.swipebox-close:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
