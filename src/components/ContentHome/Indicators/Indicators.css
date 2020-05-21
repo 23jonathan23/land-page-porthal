@@ -27,21 +27,3 @@
 .text-center-indicators {
   text-align: center;
 }
-
-span.numscroller {
-  font-size: 66px;
-  line-height: 70px;
-  opacity: 0.7;
-  font-weight: 200;
-  letter-spacing: 10px;
-}
-
-.no-pad {
-  padding: 0 !important;
-  margin: 0 !important;
-  font-weight: 300;
-  margin: 0 0 35px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  line-height: 1.5;
-}

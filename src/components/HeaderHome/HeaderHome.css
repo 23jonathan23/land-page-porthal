@@ -6,7 +6,7 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 625px;
+  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
