@@ -6,6 +6,7 @@ import ServicesCompany from './ServicesCompany/ServicesCompany'
 import Indicators from './Indicators/Indicators'
 import Benefits from './Benefits/Benefits'
 import Presentation from './Presentation/Presentation'
+import Contact from './Contact/Contact'
 
 export default props => {
   return (
@@ -16,6 +17,7 @@ export default props => {
       <Indicators />
       <Benefits />
       <Presentation showVideo={props.showVideo} />
+      <Contact />
     </>
   )
 }

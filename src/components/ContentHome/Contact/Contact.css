@@ -1,0 +1,44 @@
+.contact {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #fff;
+}
+
+.contact h2 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.contact p {
+  margin: 0 0 35px;
+}
+
+.margin-information {
+  margin-right: 95px;
+}
+
+@media (max-width: 1199px) {
+  .margin-information {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-center-contact {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 24px;
+  }
+  .margin-information {
+    margin-right: 0;
+  }
+}

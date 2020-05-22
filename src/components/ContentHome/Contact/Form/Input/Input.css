@@ -1,0 +1,28 @@
+.label-category {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.input-lg {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  border-radius: 0px;
+  font-weight: 200;
+  color: #555;
+  transition: all 0.5s ease;
+}
+
+.input-lg:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-color: #bbb;
+}

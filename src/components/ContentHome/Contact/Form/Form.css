@@ -1,0 +1,29 @@
+.button-transition {
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-custom {
+  text-shadow: none;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 8px 25px;
+  border-radius: 0;
+  border: 2px solid #18191b;
+  background-color: #18191b;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  outline: 0;
+}
+
+.button-custom:hover {
+  background-color: #222222;
+}
+
+.button-custom:focus {
+  border-radius: 0;
+  outline: 0;
+}

@@ -1,0 +1,13 @@
+.type-contact {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 20px;
+  font-weight: 300;
+}
+
+.icon-color {
+  color: #b2b2b2;
+}
