@@ -1,0 +1,27 @@
+.footer {
+  color: #444;
+  background-color: #f4f4f4;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.group-development-footer {
+  padding-top: 40px;
+}
+
+.group-social-media {
+  display: flex;
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  .group-social-media {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .group-description-footer {
+    text-align: center;
+  }
+}

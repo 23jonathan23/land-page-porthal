@@ -7,6 +7,7 @@ import Indicators from './Indicators/Indicators'
 import Benefits from './Benefits/Benefits'
 import Presentation from './Presentation/Presentation'
 import Contact from './Contact/Contact'
+import CallForAction from '../CallForAction/CallForAction'
 
 export default props => {
   return (
@@ -18,6 +19,7 @@ export default props => {
       <Benefits />
       <Presentation showVideo={props.showVideo} />
       <Contact />
+      <CallForAction text='Frase de' textBold='Impacto' />
     </>
   )
 }

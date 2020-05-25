@@ -1,0 +1,30 @@
+.icon-heart-footer {
+  color: #b4b4b4;
+  transition: all 0.5s ease;
+}
+
+.icon-heart-footer:hover {
+  color: #333;
+}
+
+.development-p-small {
+  font-size: 85%;
+  margin: 0 0 35px;
+}
+
+.icon-heart-hover {
+  color: #555;
+}
+
+.icon-heart-hover:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+@media (max-width: 991px) {
+  .development-text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
