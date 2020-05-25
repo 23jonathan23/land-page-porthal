@@ -120,3 +120,22 @@ h5 {
     margin-left: 20px;
   }
 }
+
+@media (max-width: 470px) {
+  .title-margin {
+    width: auto;
+  }
+  .title-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .title-intro h1 {
+    font-size: 31px;
+  }
+  .title-intro h5 {
+    font-size: 12px;
+  }
+}
