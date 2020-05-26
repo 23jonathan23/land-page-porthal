@@ -9,7 +9,7 @@ import Footer from '../../components/Footer/Footer'
 import { publication } from '../../components/ContentHome/Portfolio/list'
 
 export default props => {
-  const [id, setId] = useState(parseInt(props.match.params.id))
+  const [id] = useState(parseInt(props.match.params.id))
   const [portfolioItem, setPortfolioItem] = useState({})
 
   useEffect(() => {
