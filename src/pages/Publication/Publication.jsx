@@ -16,13 +16,23 @@ export default props => {
     const filterItem = i => i.id === id
     const item = publication.filter(filterItem)
     setPortfolioItem(item[0])
+    handleScroll()
   }, [id])
+
+  const handleScroll = () => {
+    document.documentElement.scrollTop = 0
+  }
 
   return (
     <>
       <HeaderPublication pageName={portfolioItem.title} />
       <ContentPublication portfolioItem={portfolioItem} />
-      <CallForAction text='Frase de' textBold='Impacto' />
+      <CallForAction
+        text='Frase de'
+        textBold='Impacto'
+        goBackHome={true}
+        textButton='Retornar ao Início'
+      />
       <Footer />
     </>
   )

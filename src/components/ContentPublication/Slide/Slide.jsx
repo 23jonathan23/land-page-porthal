@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
 import './Slide.css'
 
@@ -6,6 +6,8 @@ export default props => {
   const [itemActive, setItemActive] = useState(0)
 
   const { content } = props
+
+  const refSlide = useRef(null)
 
   const renderSlideItem = () => {
     if (content.slideImages !== undefined)
@@ -31,12 +33,19 @@ export default props => {
         : itemActive + operation > content.slideImages.length - 1
         ? content.slideImages.length - 1
         : itemActive + operation
-    console.log(result)
+
     setItemActive(result)
+
+    scrollToRef(refSlide)
   }
+
+  //responsavél por mover o sroll da pagina até o elemento de referência
+  const scrollToRef = refElement =>
+    refElement.current && window.scrollTo(0, refElement.current.offsetTop + 450)
 
   return (
     <div
+      ref={refSlide}
       id='carousel-publication'
       className='carousel slide'
       data-ride='carousel'
@@ -44,7 +53,7 @@ export default props => {
       <div className='carousel-inner'>{renderSlideItem()}</div>
       <a
         className='carousel-control-prev'
-        href='#carousel-publication'
+        href='javascript:;'
         role='button'
         data-slide='prev'
         onClick={() => handleNextAndPrevios(-1)}
@@ -54,7 +63,7 @@ export default props => {
       </a>
       <a
         className='carousel-control-next'
-        href='#carousel-publication'
+        href='javascript:;'
         role='button'
         data-slide='next'
         onClick={() => handleNextAndPrevios(+1)}

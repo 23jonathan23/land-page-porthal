@@ -10,16 +10,24 @@ import Contact from './Contact/Contact'
 import CallForAction from '../CallForAction/CallForAction'
 
 export default props => {
+  //Referência para a tag section Portfolio e Contact
+  const { refPortfolio, refContact } = props
+
   return (
     <>
-      <Portfolio />
+      <Portfolio refPortfolio={refPortfolio} />
       <About />
       <ServicesCompany />
       <Indicators />
       <Benefits />
       <Presentation showVideo={props.showVideo} />
-      <Contact />
-      <CallForAction text='Frase de' textBold='Impacto' />
+      <Contact refContact={refContact} />
+      <CallForAction
+        text='Frase de'
+        textBold='Impacto'
+        refContact={refContact}
+        textButton='Solicite um Orçamento'
+      />
     </>
   )
 }

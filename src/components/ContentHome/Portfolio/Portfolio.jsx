@@ -12,8 +12,10 @@ export default props => {
     return p.map(i => <PortfolioItem key={i.id} publication={i} />)
   }
 
+  const { refPortfolio } = props //Referência para a tag section Portfolio
+
   return (
-    <section id='portfolio'>
+    <section ref={refPortfolio} id='portfolio'>
       <div className='container text-center'>
         <div className='row row-margin-portfolio'>
           <div className='text-portfolio col-sm-10 col-sm-offset-1 col-md-12'>

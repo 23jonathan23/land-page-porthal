@@ -8,8 +8,10 @@ import TypeContact from './TypeContact/TypeContact'
 import Form from './Form/Form'
 
 export default props => {
+  const { refContact } = props //Referência para a section contact
+
   return (
-    <section className='contact'>
+    <section ref={refContact} className='contact'>
       <div className='container'>
         <div className='row text-center-contact'>
           <div className='col-sm-12 col-md-12 col-lg-5 col-lg-offset-2 margin-information'>

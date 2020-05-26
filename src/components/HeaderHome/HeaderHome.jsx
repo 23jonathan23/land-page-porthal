@@ -5,7 +5,12 @@ import './HeaderHome.css'
 export default props => {
   const [classHeader, setClassHeader] = useState('')
 
-  function handleScroll() {
+  useEffect(() => {
+    // console.log(document.documentElement.scrollTop)
+    window.onscroll = () => handleScroll()
+  })
+
+  const handleScroll = () => {
     if (document.documentElement.scrollTop < 10) {
       setClassHeader('')
     } else if (
@@ -28,10 +33,11 @@ export default props => {
     }
   }
 
-  useEffect(() => {
-    // console.log(document.documentElement.scrollTop)
-    window.onscroll = () => handleScroll()
-  })
+  const { refPortfolio } = props //Referência para a tag section Portfolio
+
+  //responsavél por mover o sroll da pagina até o elemento de referência
+  const scrollToRef = refElement =>
+    refElement.current && window.scrollTo(0, refElement.current.offsetTop - 200)
 
   return (
     <header className={`container-intro ${classHeader}`}>
@@ -44,7 +50,10 @@ export default props => {
                 <h5>Design · Inovação · Criatividade</h5>
               </div>
               <div className='scroll-btn'>
-                <a href='#portfolio'>
+                <a
+                  href='javascript:;'
+                  onClick={() => scrollToRef(refPortfolio)}
+                >
                   <span className='mouse'>
                     <span className='weel'>
                       <span></span>
