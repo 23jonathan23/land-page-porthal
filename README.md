@@ -6,7 +6,7 @@ Version Original - Inspiration : http://forbetterweb.com/html/pheromone/indexpor
 
 ![](project_complete.gif)
 
-First work as trainee in Porthal Systems, the project was based in template Pheromone. In project was used ReactJS for construction an application front-end.
+First work as a trainee in Portal Systems, the project was based on template Pheromone. That project was used ReactJS for the construction of an application front-end.
 
 ## Too much technology:
 - react
